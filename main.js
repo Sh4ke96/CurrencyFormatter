@@ -32,7 +32,7 @@ let formatter5 = new Intl.NumberFormat("en-IN", {
   currency: "INR",
 });
 
-btn.addEventListener("click", () => {
+function currencyShow() {
   let amount = document.getElementById("amount").value;
   dollars.innerHTML = `<span>US Dollars:</span> ${formatter1.format(amount)}`;
   yen.innerHTML = `<span>Japanese Yen:</span> ${formatter2.format(amount)}`;
@@ -40,4 +40,14 @@ btn.addEventListener("click", () => {
   pound.innerHTML = `<span>British Pound:</span> ${formatter4.format(amount)}`;
   rupees.innerHTML = `<span>Indian Rupees:</span> ${formatter5.format(amount)}`;
   p.forEach((p) => (p.style.display = "block"));
+}
+
+btn.addEventListener("click", () => {
+  currencyShow();
+});
+
+amount.addEventListener("keyup", function (event) {
+  if (event.key == "Enter") {
+    currencyShow();
+  }
 });
