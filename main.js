@@ -33,7 +33,7 @@ let formatter5 = new Intl.NumberFormat("en-IN", {
 });
 
 function currencyShow() {
-  let amount = document.getElementById("amount").value;
+  const amount = document.getElementById("amount").value;
   dollars.innerHTML = `<span>US Dollars:</span> ${formatter1.format(amount)}`;
   yen.innerHTML = `<span>Japanese Yen:</span> ${formatter2.format(amount)}`;
   euro.innerHTML = `<span>Euro:</span> ${formatter3.format(amount)}`;
@@ -51,3 +51,7 @@ amount.addEventListener("keyup", function (event) {
     currencyShow();
   }
 });
+
+window.onload = function () {
+  document.getElementById("amount").value = "";
+};
