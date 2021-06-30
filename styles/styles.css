@@ -16,6 +16,30 @@ body {
   padding: 40px 20px;
 }
 
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    padding: 40px 80px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .wrapper {
+    padding: 40px 160px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    padding: 40px 320px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .wrapper {
+    padding: 40px 500px;
+  }
+}
+
 .wrapper .container {
   width: 100%;
   background-color: #ffffff;
