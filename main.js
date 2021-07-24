@@ -1,33 +1,33 @@
 const btn = document.getElementById("btn");
 const p = document.querySelectorAll(".output-p");
 
-let dollars = document.getElementById("output1");
-let yen = document.getElementById("output2");
-let euro = document.getElementById("output3");
-let pound = document.getElementById("output4");
-let rupees = document.getElementById("output5");
+const dollars = document.getElementById("output1");
+const yen = document.getElementById("output2");
+const euro = document.getElementById("output3");
+const pound = document.getElementById("output4");
+const rupees = document.getElementById("output5");
 
-let formatter1 = new Intl.NumberFormat("en-US", {
+const formatter1 = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
 });
 
-let formatter2 = new Intl.NumberFormat("ja-JP", {
+const formatter2 = new Intl.NumberFormat("ja-JP", {
   style: "currency",
   currency: "JPY",
 });
 
-let formatter3 = new Intl.NumberFormat("en-US", {
+const formatter3 = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "EUR",
 });
 
-let formatter4 = new Intl.NumberFormat("en-GB", {
+const formatter4 = new Intl.NumberFormat("en-GB", {
   style: "currency",
   currency: "GBP",
 });
 
-let formatter5 = new Intl.NumberFormat("en-IN", {
+const formatter5 = new Intl.NumberFormat("en-IN", {
   style: "currency",
   currency: "INR",
 });
